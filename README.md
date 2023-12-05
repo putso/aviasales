@@ -1,1 +1,1 @@
-deploy: https://aviasales-nine-indol.vercel.app/
+deploy: https://aviasales-putso.vercel.app?_vercel_share=bm4KsuBdTPSjR042A3gH8mPgkDJPzDUa

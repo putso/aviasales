@@ -80,7 +80,7 @@ export default function TicketList() {
     return (
       <Contaier>
         {' '}
-        <Alert className={style.middle} message="Ничего не найдено" type="info" />
+        <Alert className={style.middle} message="Рейсов, подходящих под заданные фильтры, не найдено" type="info" />
       </Contaier>
     );
   return (
@@ -89,9 +89,11 @@ export default function TicketList() {
         <Ticket key={ticket.id} ticket={ticket}></Ticket>
       ))}
       {isloading && <Spin className={style.middle} size="large"></Spin>}
-      <Button size="large" type="primary" onClick={() => setpageSize((value) => value + 10)}>
-        Показать еще
-      </Button>
+      {!isloading && (
+        <Button size="large" type="primary" onClick={() => setpageSize((value) => value + 10)}>
+          Показать еще
+        </Button>
+      )}
     </Contaier>
   );
 }

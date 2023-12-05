@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Filter.module.scss';
-import CheckBoxFitler from './CheckBoxFitler';
+import CheckBoxFitler from '../CheckBoxFitler';
 import { classNames } from '@/utils';
 import { useAppDispatch, useAppSelector } from '@/store/store';
 import { filter, selectFilter, updaAllFilter, updateFilter } from '@/store/slice/ticketSlice';
