@@ -1,0 +1,25 @@
+.tabs {
+  height: 50px;
+  width: 502px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #DFE5EC;
+  border-radius: 10px;
+  gap: 1px;
+  overflow:hidden;
+  .tab {
+    margin: 0;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid #DFE5EC;
+    cursor: pointer;
+
+  }
+  .active {
+    background: #2196F3;
+    color: white;
+  }
+}
